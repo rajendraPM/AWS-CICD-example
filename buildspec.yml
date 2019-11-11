@@ -2,14 +2,14 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo: "Pre-Build stage started"
+      - echo "Pre-Build stage started"
   build:
     commands:
-      - echo: "Build stage started"
+      - echo "Build stage started"
       - mvn clean prepare-package war:exploded
   post_build:
     commands:
-      - echo: "Post build phase started"
+      - echo "Post build phase started"
       - mv target/deploy ./
 artifacts:
   files:
