@@ -10,7 +10,7 @@ public class HelloController {
 
 @GetMapping
 public String hello(){
-    return "Hello from AWS CI-CD!!!!";
+    return "Hello from AWS CI-CD!!!!. This is really Awsome";
 }
 }
 
